@@ -37,11 +37,19 @@
       background-color: white;
       padding: 20px;
       border-radius: 12px;
-      width: 250px;
+      width: 280px;
       text-align: center;
       cursor: pointer;
       font-weight: bold;
       transition: transform 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .category img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
     .category:hover {
       transform: scale(1.05);
@@ -53,16 +61,27 @@
   </style>
 </head>
 <body>
-  <header>
-    Ismail - CELO Fixing
-  </header>
-  <div class="welcome">
-    مرحبًا بكم في موقعنا! اكتشف منتجات التثبيت عالية الجودة.
-  </div>
+  <header>Ismail - CELO Fixing</header>
+  <div class="welcome">مرحبًا بكم في موقعنا! اكتشف منتجات التثبيت عالية الجودة.</div>
   <div class="categories">
-    <a href="ankor_full.html"><div class="category">أنكور بولت<br>Anchor Bolt</div></a>
-    <a href="chemical.html"><div class="category">مواد كيميائية للزرع<br>Chemical Fixing</div></a>
-    <a href="silicone.html"><div class="category">سيليكون سيلانت<br>Silicone Sealant</div></a>
+    <a href="ankor_full.html">
+      <div class="category">
+        <img src="anchor_card.jpg" alt="أنكور بولت">
+        أنكور بولت<br>Anchor Bolt
+      </div>
+    </a>
+    <a href="chemical.html">
+      <div class="category">
+        <img src="chemical_card.jpg" alt="مواد التزريع">
+        مواد كيميائية للزرع<br>Chemical Fixing
+      </div>
+    </a>
+    <a href="silicone.html">
+      <div class="category">
+        <img src="silicone_card.jpg" alt="سيليكون سيلانت">
+        سيليكون سيلانت<br>Silicone Sealant
+      </div>
+    </a>
   </div>
 </body>
 </html>
