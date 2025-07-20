@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -16,72 +15,64 @@
     header {
       padding: 20px;
       text-align: center;
-      font-weight: bold;
-      font-size: 2em;
-      background-color: rgba(255,255,255,0.2);
-    }
-    .welcome {
-      text-align: center;
-      margin: 40px;
-      font-size: 1.2em;
+      font-size: 24px;
       font-weight: bold;
     }
-    .categories {
+    .section {
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
-      margin: 20px;
+      gap: 20px;
+      padding: 40px 20px;
     }
-    .category {
-      background-color: white;
-      padding: 20px;
+    .card {
+      background: white;
       border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       width: 280px;
       text-align: center;
-      cursor: pointer;
-      font-weight: bold;
-      transition: transform 0.3s;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 20px;
     }
-    .category img {
-      width: 100%;
+    .card img {
+      max-width: 100%;
       height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      object-fit: contain;
     }
-    .category:hover {
-      transform: scale(1.05);
+    .card h3 {
+      margin: 15px 0 10px;
     }
-    a {
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
       text-decoration: none;
-      color: black;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>Ismail - CELO Fixing</header>
-  <div class="welcome">مرحبًا بكم في موقعنا! اكتشف منتجات التثبيت عالية الجودة.</div>
-  <div class="categories">
-    <a href="ankor_full.html">
-      <div class="category">
-        <img src="anchor_card.jpg" alt="أنكور بولت">
-        أنكور بولت<br>Anchor Bolt
-      </div>
-    </a>
-    <a href="chemical.html">
-      <div class="category">
-        <img src="chemical_card.jpg" alt="مواد التزريع">
-        مواد كيميائية للزرع<br>Chemical Fixing
-      </div>
-    </a>
-    <a href="silicone.html">
-      <div class="category">
-        <img src="silicone_card.jpg" alt="سيليكون سيلانت">
-        سيليكون سيلانت<br>Silicone Sealant
-      </div>
-    </a>
+  <header>مرحبًا بكم في موقع Ismail - CELO Fixing</header>
+
+  <div class="section">
+    <div class="card">
+      <img src="anchor_card.jpg" alt="Anchor Bolt">
+      <h3>انكور بولت<br><small>Anchor Bolt</small></h3>
+      <a href="ankor_full.html">عرض التفاصيل</a>
+    </div>
+    <div class="card">
+      <img src="chemical_card.jpg" alt="Chemical Fixing">
+      <h3>مواد تزريع<br><small>Chemical Fixing</small></h3>
+      <a href="chemical.html">عرض التفاصيل</a>
+    </div>
+    <div class="card">
+      <img src="silicone_card.jpg" alt="Silicone Sealant">
+      <h3>سيليكون مانع التسرب<br><small>Silicone Sealant</small></h3>
+      <a href="silicone.html">عرض التفاصيل</a>
+    </div>
   </div>
+
 </body>
 </html>
